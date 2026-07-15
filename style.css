@@ -6,7 +6,7 @@
     color: white;
 }
 body{
-    background-color: #090513;
+    background-color:#0b0620;
 }
 
 #top{
@@ -287,9 +287,9 @@ footer{
     
     display: flex;
     justify-content: space-between;
-    margin-top:-80px;
+    margin-top:-10px;
 
-    padding:30px;
+    padding:40px;
 
     background:#090513;
 
@@ -491,9 +491,9 @@ html{
 
     
 }
-h2:hover{
+/* h2:hover{
       /* text-shadow:0 0 10px #7b2ff7  ; */
-}
+/* } */ 
 .social i:hover{
     color: #7b2ff7;
     border: #7b2ff7;
@@ -501,5 +501,187 @@ h2:hover{
     /* transform:translateY(-1px); */
 
     box-shadow:0 0 15px rgb(255, 255, 255);
+
+}
+#contact{
+
+    padding:90px 100px;
+
+    background:#0b0620;
+
+    text-align:center;
+    margin-top: -90px;
+
+}
+
+#contact h2{
+
+    font-size:42px;
+
+    font-family:"Exo 2",sans-serif;
+
+    margin-bottom:15px;
+
+}
+
+.contact-text{
+
+    color:#cfcfcf;
+
+    margin-bottom:60px;
+
+    font-size:18px;
+
+}
+
+.contact-container{
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    gap:70px;
+
+    flex-wrap:wrap;
+
+}
+
+/* Left Card */
+
+.contact-info{
+
+    width:360px;
+
+    background:#1a103d;
+
+    padding:40px;
+
+    border-radius:20px;
+
+    text-align:left;
+
+    box-shadow:0 0 20px rgba(123,47,247,.25);
+
+}
+
+.contact-info h3{
+
+    font-size:32px;
+
+    color:#b56cff;
+
+    margin-bottom:25px;
+
+}
+
+.contact-info p{
+
+    margin:18px 0;
+
+    font-size:18px;
+
+    line-height:1.7;
+
+}
+
+.contact-info i{
+
+    color:#b56cff;
+
+    margin-right:12px;
+
+}
+
+.quote{
+
+    margin-top:40px;
+
+    color:#c084fc;
+
+    font-style:italic;
+
+}
+
+/* Form */
+
+form{
+
+    width:450px;
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:20px;
+
+}
+
+form input,
+
+form textarea{
+
+    background:#1a103d;
+
+    border:2px solid transparent;
+
+    border-radius:12px;
+
+    padding:18px;
+
+    color:white;
+
+    font-size:17px;
+
+    outline:none;
+
+    transition:.3s;
+
+}
+
+form input::placeholder,
+
+form textarea::placeholder{
+
+    color:#cfcfcf;
+
+}
+
+form input:focus,
+
+form textarea:focus{
+
+    border-color:#a855f7;
+
+    box-shadow:0 0 12px rgba(168,85,247,.5);
+
+}
+
+.send-btn{
+
+    background:linear-gradient(135deg,#7b2ff7,#a855f7);
+
+    border:none;
+
+    border-radius:50px;
+
+    padding:16px;
+
+    font-size:18px;
+
+    font-weight:bold;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+}
+
+.send-btn:hover{
+
+    transform:translateY(-5px);
+
+    box-shadow:0 0 25px #7b2ff7;
 
 }
