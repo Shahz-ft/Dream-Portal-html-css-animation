@@ -10,7 +10,9 @@ body{
 }
 
 #top{
-    
+     position: relative;
+    overflow: hidden;
+
 height:100vh;
 margin-left: -1px;
 background:
@@ -23,6 +25,108 @@ background-size:cover;
 background-position:center;
 
 } 
+#top::after{
+
+    content:"";
+
+    position:absolute;
+
+    width:340px;
+    height:340px;
+
+    border-radius:50%;
+
+    right:255px;
+    top:150px;
+
+    background:
+    radial-gradient(circle,
+    rgba(255,255,255,.9) 0%,
+    rgba(130,170,255,.7) 15%,
+    rgba(92,225,230,.35) 35%,
+    rgba(123,47,247,.18) 55%,
+    transparent 72%);
+
+    mix-blend-mode:screen;
+
+    animation:portalPulse 4s ease-in-out infinite;
+
+    pointer-events:none;
+
+}
+@keyframes portalPulse{
+
+0%{
+
+transform:scale(.9);
+
+opacity:.5;
+
+filter:blur(12px);
+
+}
+
+50%{
+
+transform:scale(1.15);
+
+opacity:1;
+
+filter:blur(22px);
+
+}
+
+100%{
+
+transform:scale(.9);
+
+opacity:.5;
+
+filter:blur(12px);
+
+}
+
+}
+#top::before{
+
+content:"";
+
+position:absolute;
+
+width:100px;
+height:120px;
+
+right:425px;
+top:300px;
+
+border-radius:50%;
+
+border:1px solid rgba(170,130,255,.35);
+
+box-shadow:
+0 0 20px #ffffff,
+0 0 40px #e65c88;
+
+animation:spinPortal 10s linear infinite;
+
+pointer-events:none;
+
+}
+@keyframes spinPortal{
+
+from{
+
+transform:rotate(0deg);
+
+}
+
+to{
+
+transform:rotate(360deg);
+
+}
+
+}
 
 /* #top{
 
@@ -383,12 +487,12 @@ html{
 }
 #footer h2:hover{
     color: #a855f7;
-    text-shadow:0 0 10px #7b2ff7  ;
+    /* text-shadow:0 0 10px #7b2ff7  ; */
 
     
 }
 h2:hover{
-      text-shadow:0 0 10px #7b2ff7  ;
+      /* text-shadow:0 0 10px #7b2ff7  ; */
 }
 .social i:hover{
     color: #7b2ff7;
